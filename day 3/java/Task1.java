@@ -9,9 +9,9 @@ int correctRandomAnswer = 0;
 
    int random1 = random.nextInt(20);
    int random2 = random.nextInt(20);
-int multiplicationRandom = random1 * random2;
-int additionRandom = random1 + random2;
-int subtractionRandom = random1 - random2;
+	int multiplicationRandom = random1 * random2;
+	int additionRandom = random1 + random2;
+	int subtractionRandom = random1 - random2;
 
    for(int count = 0; count <= 10; count++){
 System.out.printf("%s%d%s%d%s","what is ", random1, " * ", random2, " : "   );
