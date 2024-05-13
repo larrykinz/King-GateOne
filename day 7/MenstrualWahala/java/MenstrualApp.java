@@ -12,24 +12,27 @@ public class MenstrualApp{
 
 	 System.out.println("Please enter your name : ");
          String name = input.nextLine();
-
+	 
+	 String lastFlowMonth;
+         while(true){
  	 System.out.println("Please enter your age :");
          int age = input.nextInt();
   	 if(age < 12){
-	 System.out.println("With all due respect GET LOST, this program is not for you.");
+	 System.out.println("With all due respect GET LOST, this program is not for you.");break;
 }
-         else{
+
+         
 	 System.out.println("Please enter your average complete menstrual cycle days : ");
          int days = input.nextInt();
-}
-	 System.out.println("when was your last flow month : ");
-	 String lastFlowMonth = input.nextLine();
+
+	 System.out.println("when was your first flow date : ");
+	 int FirstFlowdate = input.nextInt();
           
          System.out.println("when was your last flow date : ");
 	 int lastFlowDate = input.nextInt();
 
          
 	 
-
+}
 }
 }
