@@ -31,6 +31,8 @@ public class MenstrualApp{
          System.out.println("when was your last flow date : ");
 	 int lastFlowDate = input.nextInt();
 
+          ovulation = 
+
          
 	 
 }
