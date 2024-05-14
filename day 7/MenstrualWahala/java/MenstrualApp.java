@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Calender;
 
 public class MenstrualApp{
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class MenstrualApp{
          System.out.println("when was your last flow date : ");
 	 int lastFlowDate = input.nextInt();
 
-          ovulation = 
+         
 
          
 	 
