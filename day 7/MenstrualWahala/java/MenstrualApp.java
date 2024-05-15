@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Calender;
 
 public class MenstrualApp{
     public static void main(String[] args) {
@@ -26,11 +25,18 @@ public class MenstrualApp{
 	 System.out.println("Please enter your average complete menstrual cycle days : ");
          int days = input.nextInt();
 
-	 System.out.println("when was your first flow date : ");
-	 int FirstFlowdate = input.nextInt();
+	 System.out.println("Please enter your average flow date : ");
+	 int averageFlowDate = input.nextInt();
+         
+         System.out.println("Please enter your last menstrual date : ");
+          int lastMenstrualDate = input.nextInt();
+
+	 System.out.println("Please enter your last menstrual month number: ");
+          int lastMenstrualMonth = input.nextInt();
+
+        int nextPeriodDay = lastMenstrualDate + days;
+        int nextPeriodMonth =  lastMenstrualMonth + 1; 
           
-         System.out.println("when was your last flow date : ");
-	 int lastFlowDate = input.nextInt();
 
          
 
