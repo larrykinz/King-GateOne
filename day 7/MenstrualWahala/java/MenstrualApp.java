@@ -34,14 +34,96 @@ public class MenstrualApp{
 	 System.out.println("Please enter your last menstrual month number: ");
           int lastMenstrualMonth = input.nextInt();
 
+	 System.out.println("Please enter your last menstrual Year : ");
+          int lastMenstrualYear = input.nextInt();
+
         int nextPeriodDay = lastMenstrualDate + days;
-        int nextPeriodMonth =  lastMenstrualMonth + 1; 
+        int nextPeriodMonth =  lastMenstrualMonth;
+	int nextPeriodYear = lastMenstrualYear;
+
+
+
+        if (nextPeriodDay > 30) {
+	nextPeriodDay -= 30;
+	nextPeriodMonth++;
+	if (nextPeriodMonth > 12) {
+	nextPeriodMonth -= 12;
+        nextPeriodYear++;
+}
+}
+
+        int ovulationDay = lastMenstrualDate + (days / 2);
+	int ovulationMonth = lastMenstrualMonth;
+	int ovulationYear = lastMenstrualYear;
+
+
+
+	if (ovulationDay > 30) {
+	ovulationDay -= 30;
+	ovulationMonth++;
+	if (ovulationMonth > 12) {
+	ovulationMonth -= 12;
+	ovulationYear++;
+}
+}
+	int safePeriodStartDay = lastMenstrualDate + (days - 5);
+	int safePeriodStartMonth = lastMenstrualMonth;
+	int safePeriodStartYear = lastMenstrualYear;
+
+	if (safePeriodStartDay > 30) {
+	safePeriodStartDay -= 30;
+	safePeriodStartMonth++;
+	if (safePeriodStartMonth > 12) {
+	safePeriodStartMonth -= 12;
+	safePeriodStartYear++;
+
+
+}
+}
+
+	int safePeriodEndDay = lastMenstrualDate + (days - 1);
+	int safePeriodEndMonth = lastMenstrualMonth;
+	int safePeriodEndYear = lastMenstrualYear;
+
+
+
+if (safePeriodEndDay > 30) {
+safePeriodEndDay -= 30;
+safePeriodEndMonth++;
+if (safePeriodEndMonth > 12) {
+safePeriodEndMonth -= 12;
+safePeriodEndYear++;
+}
+}
+
+
+	System.out.println("Next period: " + nextPeriodMonth + "/" + nextPeriodDay  + "/" + nextPeriodYear);
+
+	
+	System.out.println("Ovulation: " + ovulationMonth + "/" + ovulationDay + "/" + ovulationYear);
+
+
+	System.out.println("Safe period start: " + safePeriodStartMonth + "/" + safePeriodStartDay + "/" + safePeriodStartYear);
+
+
+	System.out.println("Safe period end: " + safePeriodEndMonth + "/" + safePeriodEndDay + "/" + safePeriodEndYear);
+
+
+
+break;
+}
+
+
+	
+
+
+ 
           
 
          
 
          
 	 
-}
+
 }
 }
